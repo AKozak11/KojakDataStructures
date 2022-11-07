@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BinarySearchTree", "BinarySearchTree", "{2E074704-3920-468A-9DB6-35D33119B7D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTree", "BinarySearchTree\BinarySearchTree\BinarySearchTree.csproj", "{B9A525F8-1C84-4BC0-9D74-CB2CE6D71B79}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DirectedWeightedGraph", "DirectedWeightedGraph", "{F236BA5A-D930-4213-A842-50FC3AA16713}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectedWeightedGraph", "DirectedWeightedGraph\DirectedWeightedGraph\DirectedWeightedGraph.csproj", "{72E31F77-F6F3-42C2-871B-FB9BBFDE59F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectedWeightedGraphTest", "DirectedWeightedGraph\DirectedWeightedGraphTest\DirectedWeightedGraphTest.csproj", "{EA40878B-6A30-47F3-8EB4-0537906C2DDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9A525F8-1C84-4BC0-9D74-CB2CE6D71B79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A525F8-1C84-4BC0-9D74-CB2CE6D71B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A525F8-1C84-4BC0-9D74-CB2CE6D71B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A525F8-1C84-4BC0-9D74-CB2CE6D71B79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E31F77-F6F3-42C2-871B-FB9BBFDE59F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E31F77-F6F3-42C2-871B-FB9BBFDE59F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E31F77-F6F3-42C2-871B-FB9BBFDE59F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E31F77-F6F3-42C2-871B-FB9BBFDE59F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA40878B-6A30-47F3-8EB4-0537906C2DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA40878B-6A30-47F3-8EB4-0537906C2DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA40878B-6A30-47F3-8EB4-0537906C2DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA40878B-6A30-47F3-8EB4-0537906C2DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B9A525F8-1C84-4BC0-9D74-CB2CE6D71B79} = {2E074704-3920-468A-9DB6-35D33119B7D0}
+		{72E31F77-F6F3-42C2-871B-FB9BBFDE59F3} = {F236BA5A-D930-4213-A842-50FC3AA16713}
+		{EA40878B-6A30-47F3-8EB4-0537906C2DDA} = {F236BA5A-D930-4213-A842-50FC3AA16713}
+	EndGlobalSection
+EndGlobal
