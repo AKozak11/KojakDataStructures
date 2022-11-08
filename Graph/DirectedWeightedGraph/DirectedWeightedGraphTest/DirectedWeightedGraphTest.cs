@@ -266,8 +266,10 @@ namespace DirectedWeightedGraphTest
             Vertex node5 = new Vertex("5");
             Vertex node6 = new Vertex("6");
             Vertex node7 = new Vertex("7");
+            Vertex node8 = new Vertex("8");
 
             testObject.AddVertex(node1);
+            testObject.AddVertex(node8);
             testObject.AddVertex(node2);
             testObject.AddVertex(node3);
             testObject.AddVertex(node4);
@@ -277,6 +279,7 @@ namespace DirectedWeightedGraphTest
 
             int weight = 7;
             testObject.AddEdge(node1, node2, weight);
+            testObject.AddEdge(node1, node8, weight);
             testObject.AddEdge(node2, node5, weight);
             testObject.AddEdge(node5, node4, weight);
             testObject.AddEdge(node4, node3, weight);

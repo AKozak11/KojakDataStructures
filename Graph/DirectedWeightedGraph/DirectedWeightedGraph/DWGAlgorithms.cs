@@ -62,7 +62,6 @@ namespace KojakDatastructures.Graph
 
         private int DFS(Vertex startNode, Vertex endNode, HashSet<Vertex> visited, bool doNothing)
         {
-            int count = 0;
 
             if (startNode is null || endNode is null)
             {
@@ -71,14 +70,14 @@ namespace KojakDatastructures.Graph
 
             visited.Add(startNode);
 
-            if (startNode == endNode) return ++count;
+            if (startNode == endNode) return 1;
             foreach (Vertex n in GetNeighbors(startNode))
             {
                 if (n is null || visited.Contains(n)) continue;
                 if (n == endNode)
                 {
                     visited.Add(n);
-                    return ++count;
+                    return 1;
                 }
                 else return DFS(n, endNode, visited, true) + 1;
             }
