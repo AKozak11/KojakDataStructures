@@ -48,40 +48,34 @@ namespace KojakDatastructures.Graph
         /// <summary>
         /// Depth first search to retrieve shortest path and least amount of steps to reach end node
         ///</summary>
-        public int DFS(Vertex startNode, Vertex endNode, HashSet<Vertex> visited)
+        public int DFS(Vertex startNode, Vertex endNode, HashSet<Vertex> temp, HashSet<Vertex> visited)
         {
-            int count = DFS(startNode, endNode, visited, true);
+            DFS(startNode, endNode, temp, visited, true);
+            return visited.Count - 1;
 
-            if (visited.Contains(endNode))
-            {
-                return count;
-            }
-
-            return -1;
         }
 
-        private int DFS(Vertex startNode, Vertex endNode, HashSet<Vertex> visited, bool doNothing)
+        private void DFS(Vertex startNode, Vertex endNode, HashSet<Vertex> temp, HashSet<Vertex> visited, bool doNothing)
         {
-
             if (startNode is null || endNode is null)
             {
-                return 0;
+                return;
             }
+            temp.Add(startNode);
 
-            visited.Add(startNode);
-
-            if (startNode == endNode) return 1;
+            if (startNode == endNode)
+            {
+                foreach (Vertex v in temp)
+                {
+                    visited.Add(v);
+                }
+            }
             foreach (Vertex n in GetNeighbors(startNode))
             {
                 if (n is null || visited.Contains(n)) continue;
-                if (n == endNode)
-                {
-                    visited.Add(n);
-                    return 1;
-                }
-                else return DFS(n, endNode, visited, true) + 1;
+                DFS(n, endNode, temp, visited, true);
             }
-            return -1;
+            temp.Remove(startNode);
         }
     }
 }
