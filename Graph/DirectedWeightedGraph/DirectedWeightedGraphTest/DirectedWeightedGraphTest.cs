@@ -287,7 +287,7 @@ namespace DirectedWeightedGraphTest
             testObject.AddEdge(node6, node1, weight);
             testObject.AddEdge(node1, node7, weight);
 
-            HashSet<Vertex> visited = new HashSet<Vertex>();
+            HashSet<Vertex> pathList = new HashSet<Vertex>();
             HashSet<Vertex> temp = new HashSet<Vertex>();
 
             int expectedStepCount = 4;
@@ -296,10 +296,10 @@ namespace DirectedWeightedGraphTest
                 node1, node2, node5, node4, node3 
             };
 
-            int actualStepCount = testObject.DFS(node1, node3, temp, visited);
+            int actualStepCount = testObject.DFS(node1, node3, temp, pathList);
 
             Assert.Equal(expectedStepCount, actualStepCount);
-            Assert.Equal(expectedPath, visited);
+            Assert.Equal(expectedPath, pathList);
         }
 
         [Fact]
@@ -329,7 +329,7 @@ namespace DirectedWeightedGraphTest
             testObject.AddEdge(node6, node1, weight);
             testObject.AddEdge(node1, node7, weight);
 
-            HashSet<Vertex> visited = new HashSet<Vertex>();
+            HashSet<Vertex> pathList = new HashSet<Vertex>();
             HashSet<Vertex> temp = new HashSet<Vertex>();
 
             int expectedStepCount = -1;
@@ -338,7 +338,7 @@ namespace DirectedWeightedGraphTest
                 node1, node2, node5, node4, node3 
             };
 
-            int actualStepCount = testObject.DFS(node1, node6, temp, visited);
+            int actualStepCount = testObject.DFS(node1, node6, temp, pathList);
 
             Assert.Equal(expectedStepCount, actualStepCount);
         }
