@@ -7,9 +7,12 @@ namespace KojakDatastructures.Graph
     /// <summary>
     /// Extension of the Graph class which contains search algorithms for traversal
     /// </summary>
-    /// <returns> Integer representing number of steps to get to end node, -1 if end node not reachable from start node</returns>
     public partial class DirectedWeightedGraph
     {
+        /// <summary>
+        /// Breadth first search for connection between two nodes
+        /// </summary>
+        /// <returns> Integer representing number of steps to get to end node, -1 if end node not reachable from start node</returns>
         public int BFS(Vertex startNode, Vertex endNode, HashSet<Vertex> visited)
         {
             if (startNode is null || endNode is null) return -1;
@@ -26,9 +29,10 @@ namespace KojakDatastructures.Graph
 
                 if (current is null || visited.Contains(current)) continue;
 
+                visited.Add(current);
+
                 if (current == endNode)
                 {
-                    visited.Add(current);
                     return count;
                 }
                 List<Vertex> neighbors = GetNeighbors(current);
@@ -37,8 +41,6 @@ namespace KojakDatastructures.Graph
                     if (visited.Contains(n)) continue;
                     verticesToVisit.Enqueue(n);
                 }
-
-                visited.Add(current);
 
                 count++;
             }

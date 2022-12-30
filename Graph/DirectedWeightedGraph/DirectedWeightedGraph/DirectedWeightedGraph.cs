@@ -32,7 +32,6 @@ namespace KojakDatastructures.Graph
         {
             // validate both nodes belong to the current graph
             if (!IsVertex(startNode) || !IsVertex(endNode)) return false;
-            // if start node does not exist in edges dictionary, add edge
             if (IsEdge(startNode, endNode)) return false;
 
             // check if startnode has any existing edges
