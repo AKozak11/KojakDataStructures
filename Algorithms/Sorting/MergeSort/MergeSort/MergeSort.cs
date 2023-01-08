@@ -28,30 +28,11 @@
 
             while (i < leftLength && j < rightLength)
             {
-                if (tempLeft[i] <= tempRight[j])
-                {
-                    arr[k] = tempLeft[i];
-                    i++;
-                }
-                else
-                {
-                    arr[k] = tempRight[j];
-                    j++;
-                }
-                k++;
+                if (tempLeft[i] <= tempRight[j]) arr[k++] = tempLeft[i++];
+                else arr[k++] = tempRight[j++];
             }
-            while (i < leftLength)
-            {
-                arr[k] = tempLeft[i];
-                i++;
-                k++;
-            }
-            while (j < rightLength)
-            {
-                arr[k] = tempRight[j];
-                j++;
-                k++;
-            }
+            while (i < leftLength) arr[k++] = tempLeft[i++];
+            while (j < rightLength) arr[k++] = tempRight[j++];
         }
         public static void Sort(int[] arr, int l, int r)
         {
