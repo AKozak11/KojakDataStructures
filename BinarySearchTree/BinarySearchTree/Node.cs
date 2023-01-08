@@ -1,6 +1,6 @@
 using System;
 
-namespace DataStructures.Tree
+namespace KojakDataStructures
 {
     public class Node
     {

@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using KojakDataStructures;
 
-namespace DataStructures.Tree
+namespace BSTProgram
 {
     public class Program
     {
@@ -46,7 +47,7 @@ namespace DataStructures.Tree
                 {
                     Console.Write(n.Data + " | ");
                 }
-                
+
             }
             catch (Exception ex)
             {

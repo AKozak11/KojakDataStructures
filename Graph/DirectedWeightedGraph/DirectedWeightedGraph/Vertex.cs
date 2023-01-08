@@ -1,7 +1,6 @@
 using System;
-using KojakDatastructures.Graph;
 
-namespace KojakDatastructures.GraphNode
+namespace KojakDatastructures
 {
     public class Vertex
     {

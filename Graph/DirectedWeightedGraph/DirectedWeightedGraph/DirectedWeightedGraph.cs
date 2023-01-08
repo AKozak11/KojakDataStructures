@@ -1,9 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using KojakDatastructures.GraphNode;
 
-namespace KojakDatastructures.Graph
+namespace KojakDatastructures
 {
     public partial class DirectedWeightedGraph
     {

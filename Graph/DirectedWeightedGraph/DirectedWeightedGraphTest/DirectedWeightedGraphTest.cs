@@ -1,10 +1,9 @@
 using Xunit;
 using System;
 using System.Collections.Generic;
-using KojakDatastructures.Graph;
-using KojakDatastructures.GraphNode;
+using KojakDatastructures;
 
-namespace DirectedWeightedGraphTest
+namespace KojakDatastructuresTest
 {
 
     public class DirectedWeightedGraphTest

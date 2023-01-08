@@ -2,7 +2,7 @@ using Xunit;
 using System.Collections.Generic;
 using KojakAlgorithms;
 
-namespace KojakAlgorithms.Test
+namespace KojakAlgorithmsTest
 {
 
     public class QuickSortTest
