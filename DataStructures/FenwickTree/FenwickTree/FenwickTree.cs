@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace KojakDataStructures.BIT
+namespace KojakDataStructures
 {
     public class FenwickTree
     {

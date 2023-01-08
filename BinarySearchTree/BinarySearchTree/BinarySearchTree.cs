@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace DataStructures.Tree
+namespace KojakDataStructures
 {
     public class BinarySearchTree
     {

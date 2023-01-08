@@ -1,9 +1,9 @@
 using Xunit;
 using System;
 using System.Collections.Generic;
-using KojakDataStructures.BIT;
+using KojakDataStructures;
 
-namespace KojakDataStructures.BIT.Test
+namespace KojakDataStructuresTest
 {
     public class FenwickTreeTest
     {

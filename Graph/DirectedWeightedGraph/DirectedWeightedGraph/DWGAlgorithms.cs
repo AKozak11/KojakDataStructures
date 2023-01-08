@@ -1,8 +1,7 @@
 using System;
 using System.Collections.Generic;
-using KojakDatastructures.GraphNode;
 
-namespace KojakDatastructures.Graph
+namespace KojakDatastructures
 {
     /// <summary>
     /// Extension of the Graph class which contains search algorithms for traversal

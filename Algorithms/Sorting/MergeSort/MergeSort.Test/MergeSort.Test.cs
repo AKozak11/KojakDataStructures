@@ -1,6 +1,7 @@
 using Xunit;
 using KojakAlgorithms;
-namespace KojakAlgorithms.Test
+
+namespace KojakAlgorithmsTest
 {
 
     public class MergeSortTest
